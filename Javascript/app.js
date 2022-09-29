@@ -22,6 +22,14 @@ console.log(character.property2);
 
 let firstName = "Jon";
 let lastName = "Snow";
-let Age = "24";
+let age = "24";
 
-console.log()
+let result = "Soy " + firstName + " " + lastName + " Tengo " + age + " años " + "y me gustan los lobos";
+console.log(result);
+
+
+const toy1 = {name: 'Buss myYear', price: 19};
+const toy2 = {name: 'Rallo mcKing', price: 29};
+
+const totalPrice = (toy1(19) && toy2(29));
+console.log(totalPrice);
