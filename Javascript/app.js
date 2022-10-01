@@ -69,3 +69,77 @@ let d =2;
 const resultadoDivision = c / d;
 
 console.log(resultadoDivision);
+
+let p = 10;
+let j = 5;
+
+let o =15;
+
+const resultadoSuma = p + j;
+
+console.log(resultadoSuma);
+
+let m = 10;
+let n = 5;
+
+let i = 50;
+
+const resultadoMultiplicacion2 = m * n;
+
+console.log(resultadoMultiplicacion2);
+
+
+/*------------------------------------------
+---------**Iteración #4: Arrays**-----------
+------------------------------------------*/
+
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+console.log(avengers.at(0));
+
+//---------------------------------------
+
+const avengers1 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+avengers[0] = "IRONMAN";
+
+console.log(avengers);
+
+//----------------------------------------
+
+const avengers2 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+console.log(avengers2.length);
+
+//----------------------------------------
+
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+
+rickAndMortyCharacters.push("Morty", "summer");
+
+console.log(rickAndMortyCharacters);
+console.log(rickAndMortyCharacters.at(4));
+
+//----------------------------------------
+
+const rickAndMortyCharacters1 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+rickAndMortyCharacters1.pop()
+
+console.log(rickAndMortyCharacters1);
+console.log(rickAndMortyCharacters[0]);
+console.log(rickAndMortyCharacters[4]);
+
+//----------------------------------------
+
+const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+rickAndMortyCharacters2.splice(1, 1);
+
+console.log(rickAndMortyCharacters2);
+
+/*-----------------------------------------------------
+---------**Iteración #5: Condicionales**---------------
+-----------------------------------------------------*/
+
+
