@@ -2,51 +2,79 @@
 -------------**Iteración #1: Buscar el máximo**--------
 ------------------------------------------------------*/
 
-function sum(numberOne , numberTwo) {
+// function sum(numberOne , numberTwo) {
 
-    //insert code //NO RESUELTO
+//     if (numberOne > numberTwo){
+//       return numberOne
+//     } else {return numberTwo
+      
+//     }
+      
 
-  }
+//   }
+
+//   let moreValue = sum(64, 75);
+
+//   console.log(moreValue);
+
 
 /*-----------------------------------------------------
 ------**Iteración #2: Buscar la palabra más larga**----
 ------------------------------------------------------*/
 
-const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
-function findLongestWord(param) {
+
+// const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+// function findLongestWord(param) {
+
+//   let totales  = [];
+//   for(let palabra of avengers) {
+//     totales.push(palabra.length);
+//   }
   
+//   let maximo = Math.max.apply(null, totales);
+  
+//   for (let elemento of avengers) {
+//     if (elemento.length === maximo) {
+//       console.log(elemento);
+//     }
+//   }
+// }
 
-  //insert code //NO RESUELTO
-
-}
+// findLongestWord(avengers);
 
 /*-----------------------------------------------------
 ------**Iteración #3: Calcular la suma**---------------
 -----------------------------------------------------*/
 
 
-const numbers = [1, 2, 3, 5, 45, 37, 58];
+// const numbers = [1, 2, 3, 5, 45, 37, 58];
 
-function sumAll(param) {
+// function sumAll(param) {
   
-  //insert code //NO RESUELTO
+//   let sum = 0;
 
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+// console.log(sum);
+
+// }
+// sumAll(numbers);
 
 /*------------------------------------------------------
 --------**Iteración #4: Calcular el promedio**----------
 ------------------------------------------------------*/
 
-function average(param) {
-  let i = 0, summ = 0, ArrayLen = param.length;
-  while (i < ArrayLen) {
-      summ = summ + param[i++];
-  }
-  return summ / ArrayLen;  
-  }
-  let param = [12, 21, 38, 5, 45, 37, 6];
-  let a = average(param);
- console.log(a)
+// function average(param) {
+//   let i = 0, summ = 0, ArrayLen = param.length;
+//   while (i < ArrayLen) {
+//       summ = summ + param[i++];
+//   }
+//   return summ / ArrayLen;  
+//   }
+//   let param = [12, 21, 38, 5, 45, 37, 6];
+//   let a = average(param);
+//  console.log(a)
 
 
 /*-----------------------------------------------------
@@ -56,7 +84,7 @@ function average(param) {
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 function averageWord(param) {
 
-  // insert code //NO RESUELTO
+  
 
 }
 
@@ -64,41 +92,41 @@ function averageWord(param) {
 ------**Iteración #6: Valores únicos**-----------------
 ------------------------------------------------------*/
 
-const duplicates = [
-  'sushi',
-  'pizza',
-  'burger',
-  'potatoe',
-  'pasta',
-  'ice-cream',
-  'pizza',
-  'chicken',
-  'onion rings',
-  'pasta',
-  'soda'
-];
-function removeDuplicates(param) {
+// const duplicates = [
+//   'sushi',
+//   'pizza',
+//   'burger',
+//   'potatoe',
+//   'pasta',
+//   'ice-cream',
+//   'pizza',
+//   'chicken',
+//   'onion rings',
+//   'pasta',
+//   'soda'
+// ];
+// function removeDuplicates(param) {
 
-  const numerosUnicos = [...new Set(duplicates)]; 
+//   const numerosUnicos = [...new Set(duplicates)]; 
 
-let duplicados = [...duplicates]; 
-numerosUnicos.forEach((duplicate) => {
-  const indice = duplicados.indexOf(duplicate);
-  duplicados = duplicados.slice(0, indice)
-  .concat(duplicados.slice(indice + 1, duplicados.length));
-});
+// let duplicados = [...duplicates]; 
+// numerosUnicos.forEach((duplicate) => {
+//   const indice = duplicados.indexOf(duplicate);
+//   duplicados = duplicados.slice(0, indice)
+//   .concat(duplicados.slice(indice + 1, duplicados.length));
+// });
 
-console.log(duplicados); 
+// console.log(duplicados); 
 
-let result = duplicates.filter((item,index)=>{
-  return duplicates.indexOf(item)
- === index
-})
+// let result = duplicates.filter((item,index)=>{
+//   return duplicates.indexOf(item)
+//  === index
+// })
  
-console.log(result)
-}
+// console.log(result)
+// }
 
-removeDuplicates(param)
+// removeDuplicates(param)
 
 /*------------------------------------------------------
 ----------**Iteración #7: Buscador de nombres**---------
@@ -118,9 +146,12 @@ const nameFinder = [
   'Marc'
 ];
 function finderName(param) {
-  // insert code//NO RESUELTO
-}
+  
+  const searchName = nameFinder.includes(nameFinder);
+  console.log(finderName);
 
+}
+finderName("Jessica")
 /*-----------------------------------------------------
 ----**Iteration #8: Contador de repeticiones**---------
 ------------------------------------------------------*/
