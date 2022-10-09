@@ -84,9 +84,27 @@
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 function averageWord(param) {
 
-  
-
+  let total = 0
+  let totalString = 0
+  let totalNumber = 0
+  mixedElements.forEach(element => {
+      if(typeof element == 'string') {
+          total = total + element.length;
+          totalString = totalString + element.length;
+      }        
+      if(typeof element == 'number') {
+          total = total + element;
+          totalNumber = totalNumber + element;
+      }
+  }) 
+  console.log(`Total:           ${total}`);   
+  console.log(`TotalString:     ${totalString}`);   
+  console.log(`TotalNumber:     ${totalNumber}`);   
 }
+
+averageWord();
+
+
 
 /*-----------------------------------------------------
 ------**Iteración #6: Valores únicos**-----------------
@@ -147,11 +165,29 @@ const nameFinder = [
 ];
 function finderName(param) {
   
-  const searchName = nameFinder.includes(nameFinder);
-  console.log(finderName);
+     //Primera parte
+     const nameExists = names.includes(nameToFind);
+     console.log(nameExists);
+ 
+     //Segunda parte
+     const namePosition = names.indexOf(nameToFind);
+     console.log(namePosition);
+ 
+     //return `${nameExists} ${namePosition}`;
+     //return { nameExists, namePosition };
+ }
+ 
+ 
+ 
+ 
+ const nameOfOneOfUs = "Celia";
+ 
+ searchInArray(nameOfOneOfUs);
+    
+  
 
-}
-finderName("Jessica")
+
+finderName()
 /*-----------------------------------------------------
 ----**Iteration #8: Contador de repeticiones**---------
 ------------------------------------------------------*/
@@ -168,7 +204,15 @@ const counterWords = [
   'enjoy',
   'upgrade',
   'code'
-];
+]
+
+
 function repeatCounter(param) {
-  // insert code//NO RESUELTO
+  const count = arrayToCount.reduce((accumulator, word) => {
+    return {...accumulator, [word]: (accumulator[word] || 0) + 1};
+  }, {});
+
+console.log(count);
 }
+
+repeatCounter(counterWords);
