@@ -95,4 +95,176 @@ const resultUpdateToy2 = {...toy2, ...toyUpdate};
 
 console.log(resultUpdateToy2);
 
+//------------------------------------------------
 
+const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
+
+const colorFree2 = [...colors];
+
+colorFree2.splice(2,1);
+
+// hacerlo recorriendolo
+
+
+console.log(colorFree2);
+
+/*---------------------------------------------------
+-------------------**Iteración #4: Map**-------------
+----------------------------------------------------*/
+
+const users = [
+	{id: 1, name: 'Abel'},
+	{id:2, name: 'Julia'},
+	{id:3, name: 'Pedro'},
+	{id:4, name: 'Amanda'}
+];
+
+
+const idName = users.map((person) => person.name);
+
+
+console.log(idName)
+
+
+
+//--------------------------------------------------
+
+const usersA = [
+	{id: 1, name: 'Abel'},
+	{id:2, name: 'Julia'},
+	{id:3, name: 'Pedro'},
+	{id:4, name: 'Amanda'}
+];
+
+
+const idNameA = usersA.map((person) => person.name);
+
+
+
+
+//-----------------------------------------------------
+
+
+   const cities = [
+   	{isVisited:true, name: 'Tokyo'}, 
+   	{isVisited:false, name: 'Madagascar'},
+   	{isVisited:true, name: 'Amsterdam'}, 
+   	{isVisited:false, name: 'Seul'}
+   ];
+
+
+   const idNameB = cities.map((person) => person.name);
+   
+   const idNameC = cities.map((visited) => visited.isVisited);
+
+   if (idNameC === "true"){
+
+	return ("Visitado")
+ }
+   
+ 
+
+
+ /*-------------------------------------------------------------
+ -------------------**Iteración #5: Filter**--------------------
+ --------------------------------------------------------------*/
+
+
+ const ages = [22, 14, 24, 55, 65, 21, 12, 13, 90];
+
+ const more18 = ages.filter(age => age > 18);
+
+ console.log(more18);
+
+ //------------------------------------------------------
+
+
+ const ages2 = [22, 14, 24, 55, 65, 21, 12, 13, 90];
+
+ const pares = ages2.filter(age => age%2 === 0);
+
+ console.log(pares);
+
+ //--------------------------------------------------------
+
+ const streamers = [
+	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'}, 
+	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+];
+
+const lol = streamers.filter ((game) => game.gameMorePlayed === "League of Legends");
+
+console.log(lol)
+
+
+//----------------------------------------------------------
+
+const streamers2 = [
+	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+];
+ 
+const streamers2Filter = streamers2.filter ((name) => name.name.includes("u"));
+
+console.log(streamers2Filter)
+
+
+//----------------------------------------------------------
+
+const streamers3 = [
+	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+];
+
+const streamersFilter3 = streamers3.filter ((game) =>{
+
+
+
+if (game.gameMorePlayed.includes("Legends")){
+	if (game.age > 35){
+		game.gameMorePlayed = game.gameMorePlayed.toUpperCase()
+	}
+
+	return game
+}
+});
+
+console.log(streamersFilter3);
+
+
+//----------------------------------------------------
+
+// HTML 5.6 y 5.7
+
+//----------------------------------------------------
+
+/*------------------------------------------------------------
+--------------**Iteración #6: Find**--------------------------
+-------------------------------------------------------------*/
+
+
+const numbers = [32, 21, 63, 95, 100, 67, 43];
+
+const find100 = numbers.find(element => element === 100);
+
+console.log(find100);
+
+//------------------------------------------------------------
+
+const movies = [
+	{title: 'Madagascar', stars: 4.5, date: 2015},
+	{title: 'Origen', stars: 5, date: 2010},
+	{title: 'Your Name', stars: 5, date: 2016}
+];
+
+const moviesMap = movies.map ((movie) => movie.date);
+
+const find2010 = moviesMap.find((date) => date === 2010);
+
+console.log(find2010);
