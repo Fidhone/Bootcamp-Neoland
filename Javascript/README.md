@@ -127,8 +127,8 @@ Este bucle tiene que dar 10 vueltas, es decir, 10 console.log.
 Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle 
 y cambia el mensaje en la décima vuelta a 'Dormido!'.
 
-*/---------------------------------------------------------------------------------Js Function----------------------
----------------------------------------------------------
+---------------------------------------------------------------------------------JsFunction----------------------
+-------------------------------------------------------
 
 **Iteración #1: Buscar el máximo**
 
@@ -232,10 +232,29 @@ const nameFinder = [
   'Marc'
 ];
 function finderName(param) {
-  // insert code
+  //insert code 
 }
 ```
 
 **Iteration #8: Contador de repeticiones**
 
 Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.  Puedes usar este array para probar tu función:
+
+```jsx
+
+const counterWords = [
+  'code',
+  'repeat',
+  'eat',
+  'sleep',
+  'code',
+  'enjoy',
+  'sleep',
+  'code',
+  'enjoy',
+  'upgrade',
+  'code'
+];
+function repeatCounter(param) {
+  // insert code
+}

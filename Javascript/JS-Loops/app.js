@@ -2,43 +2,50 @@
 ---------Iteración #1: Usa includes--------------------
 ------------------------------------------------------*/
 
-const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
-const shirts =[];
+// const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
+// const shirts =[];
 
 
-for (let index = 0; index < products.length; index++) {
+// for (let index = 0; index < products.length; index++) {
   
-      const product = products[index];
-      if (product.includes("Camiseta")){
-      shirts.push(product);
-   }
-}
+//       const product = products[index];
+//       if (product.includes("Camiseta")){
+//       shirts.push(product);
+//    }
+// }
 
-console.log("Estas son las camisetas:", shirts);
+// console.log("Estas son las camisetas:", shirts);
 
 /*------------------------------------------------------
 --------**Iteración #2: Condicionales avanzados**-------
 -------------------------------------------------------*/
 
-const alumns = [
-    {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
-		{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
-		{name: 'Juan Miranda', T1: false, T2: true, T3: true},
-		{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
-		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
-]
+// const alumns = [
+//     {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
+// 		{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
+// 		{name: 'Juan Miranda', T1: false, T2: true, T3: true},
+// 		{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
+// 		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
+// ]
 
-            //SIN HACER
+// alumns.forEach((alumn, index) => {
+//    alumns[T1, T2, T3].isApproved = true;
+//    alumns.isApproved = true;
+
+//    //SIN HACER
+   
+// });
+
 
 /*-----------------------------------------------------
 --------**Iteración #3: Probando For...of**------------
 ------------------------------------------------------*/
 
-// const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+//  const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-// for (const from of placesToTravel) {
-//     console.log(from);
-// }
+//  for (const from of placesToTravel) {
+//      console.log("Lugares para viajar!!:", from);
+//  }
 
 
 /*-----------------------------------------------------
@@ -64,10 +71,14 @@ const alumns = [
 
 const placesToTravel5 = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}]
 
-for (var i = 0; i < 6; i++) {
+for (let i = 0; i < placesToTravel5.lenght; i++) {
+   const filteredPlace = placesToTravel5.filter((i) => id !== 11, 40);
+   
+      console.log(filteredPlace[key]);
+   }
     
     
-}
+
             //SIN HACER
            
 /*------------------------------------------------------
@@ -82,8 +93,14 @@ const toys = [
 {id: 40, name: 'El gato con Guantes'},
 {id: 40, name: 'El gato felix'}
 ]
+const ToysCats = [];
 
-               //SIN HACER
+for (const toy of toys) {
+   const ToysCat = toys.includes((toy) => "gato");
+   
+   console.log(ToysCat);
+   
+}
 
 /*------------------------------------------------------
 -------**Iteración #7: For...of avanzado**--------------

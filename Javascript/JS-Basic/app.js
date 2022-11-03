@@ -146,7 +146,7 @@ const number1 = 10;
 const number2 = 20;
 const number3 = 2;
 
-if (number2 /= number1) {
+if (number2 / number1 === 2) {
     console.log("number2 dividido entre number1 es igual a 2");
 }
 
@@ -194,4 +194,25 @@ if (number2 /2 == number1 || number1 /5 == number3) {
 -------------**Iteración #6: Bucles**------------------
 ------------------------------------------------------*/
 
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
+ for (let index = 0; index < numbers.length; index++) {
+
+     const number = numbers[index];
+     console.log(number, index);
+ }
+
+ for (let i = 0; i < numbers.length; i++) {
+     if (i /  2) {
+     console.log(i);
+     }
+ } 
+
+for (let i = 0; i < numbers.length; i++) {
+    if (i <=8) {
+        console.log("Intentando dormir🐑");
+     }  else {
+        console.log("Dormido!");
+     }
+}
+ 

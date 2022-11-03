@@ -263,8 +263,73 @@ const movies = [
 	{title: 'Your Name', stars: 5, date: 2016}
 ];
 
-const moviesMap = movies.map ((movie) => movie.date);
 
-const find2010 = moviesMap.find((date) => date === 2010);
+const find2010 = movies.find(movie => movie.date === 2010);
 
 console.log(find2010);
+
+//-------------------------------------------------------------
+
+const aliens = [
+	{name: 'Zalamero', planet: 'Eden', age: 4029},
+	{name: 'Paktu', planet: 'Andromeda', age: 32},
+	{name: 'Cucushumushu', planet: 'Marte', age: 503021}
+];
+const mutations = [
+	{name: 'Porompompero', description: 'Hace que el alien pueda adquirir la habilidad de tocar el tambor'},
+	{name: 'Fly me to the moon', description: 'Permite volar, solo y exclusivamente a la luna'},
+	{name: 'Andando que es gerundio', description: 'Invoca a un señor mayor como Personal Trainer'}
+];
+
+const findAlien =  aliens.find(alien => alien.name === "Cucushumushu");
+//console.log(findAlien);
+const findMutation =  mutations.find(mutation => mutation.name === "Porompompero");
+//console.log(findMutation);
+
+const fusionMonster = {...findAlien, ...findMutation};
+console.log(fusionMonster);
+
+/*--------------------------------------------------------------------
+--------------**Iteración #7: Reduce**--------------------------------
+---------------------------------------------------------------------*/
+
+const exams = [
+    {name: 'Yuyu Cabeza Crack', score: 5}, 
+    {name: 'Maria Aranda Jimenez', score: 1}, 
+    {name: 'Cristóbal Martínez Lorenzo', score: 6}, 
+    {name: 'Mercedez Regrera Brito', score: 7},
+    {name: 'Pamela Anderson', score: 3},
+    {name: 'Enrique Perez Lijó', score: 6},
+    {name: 'Pedro Benitez Pacheco', score: 8},
+    {name: 'Ayumi Hamasaki', score: 4},
+    {name: 'Robert Kiyosaki', score: 2},
+    {name: 'Keanu Reeves', score: 10}
+];
+
+const totalScore = exams.reduce(
+	(acc,exam) => acc + exam.score,0
+);
+
+console.log(totalScore);
+
+//-------------------------------------------------------------------
+
+const exams2 = [
+    {name: 'Yuyu Cabeza Crack', score: 5}, 
+    {name: 'Maria Aranda Jimenez', score: 1}, 
+    {name: 'Cristóbal Martínez Lorenzo', score: 6}, 
+    {name: 'Mercedez Regrera Brito', score: 7},
+    {name: 'Pamela Anderson', score: 3},
+    {name: 'Enrique Perez Lijó', score: 6},
+    {name: 'Pedro Benitez Pacheco', score: 8},
+    {name: 'Ayumi Hamasaki', score: 4},
+    {name: 'Robert Kiyosaki', score: 2},
+    {name: 'Keanu Reeves', score: 10}
+];
+
+const exams2Mapped = exams2.map((exam) => {
+ if (exam.score >= 5) {
+	return (exams2Mapped.reduce);
+}});
+
+ console.log(exams2)
