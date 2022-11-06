@@ -1,0 +1,24 @@
+#transition-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    transform: translateZ(0) scale(1);
+}
+
+button{
+  all: unset;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  font-size: 18px;
+  padding: 16px 24px;
+  text-align: center;
+
+}
+
+
