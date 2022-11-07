@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative;
-    transform: scale(1.2);
-    transition: transform 0.3s;
-    transform: translateZ(0) scale(1);
+}
+
+button:hover{
+  scale: 1.2;
+  transition: all 0.3s;
 }
 
 button{
@@ -18,7 +19,5 @@ button{
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
-
-}
-
-
+  transition: all 0.3s;
+  }
